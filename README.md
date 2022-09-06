@@ -10,6 +10,12 @@ Scripts and methods used to analyze the Sorghum MAGIC population
 │   │   └── MAGIC_ID.csv
 │   ├── phenotypes.csv
 │   └── qtl2
+│       ├── crossinfo2.csv
+│       ├── foundergeno.csv
+│       ├── gmap.csv
+│       ├── MAGIC_DArT_v3.rqtl2.csv
+│       ├── magic.yaml
+│       └── pmap.csv
 ├── LICENSE
 ├── README.md
 └── scripts

@@ -1,0 +1,16 @@
+crosstype: riself4
+sep: ","
+geno: MAGIC_DArT_v3.rqtl2.csv
+founder_geno: foundergeno.csv
+pheno: phenotypes.csv
+gmap: gmap.csv
+pmap: pmap.csv
+cross_info:
+  file: crossinfo2.csv
+genotypes:
+  A: 1
+  H: 2
+  B: 3
+na.strings:
+  - "-"
+  - NA
