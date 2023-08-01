@@ -1,0 +1,14 @@
+#PBS -N beagleImputefiltered
+#PBS -l select=1:ncpus=16:mem=20gb,walltime=24:00:00
+#PBS -o beagleImputeFiltered.out
+#PBS -e beagleImputeFiltered.err
+
+cd $PBS_O_WORKDIR
+
+WORK_DIR="/zfs/tillers/nkumar2"
+VCF_FILE="MAGIC_DArT_v3.final.imputed.recode.vcf"
+
+cd ${WORK_DIR} #defaults java -jar ~/beagle.08Feb22.fa4.jar gt=${VCF_FILE}.vcf out=Variants_0.2miss_0.05maf.imputed.vcf
+
+java -jar -Xmx52g ~/beagle.08Feb22.fa4.jar gt=${VCF_FILE} out=MAGIC_DArT_v3.filtered.imputed window=20 nthreads=16 # no output suffix will be .vcf.gz
+
